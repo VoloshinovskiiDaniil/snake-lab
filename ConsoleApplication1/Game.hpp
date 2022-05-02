@@ -7,7 +7,7 @@
 #include "Cell.hpp"
 class Game
 {
-public:
+private:
     sf::Clock clock;
     sf::RenderWindow window;
     sf::RectangleShape rect;
@@ -24,6 +24,7 @@ public:
     sd direction = sd::UP;
     uint32_t last_changed = 0;
     int getIndex(std::vector<Cell> v, Cell element);
+public:
     void run();
     Game(std::string title);
     ~Game();

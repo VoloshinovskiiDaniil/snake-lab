@@ -125,9 +125,5 @@ Game::Game(std::string title)
 }
 Game::~Game()
 {
-    delete& clock;
-    delete& window;
-    delete& rect;
     delete& snake;
-    delete& apple;
 }
